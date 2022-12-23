@@ -1,0 +1,23 @@
+#title-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 50pt;
+    font-family: Koldby;
+}
+
+.subtitle {
+    font-size: 12pt;
+    font-family: Monolith;
+}
+
+.title-text {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
