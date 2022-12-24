@@ -1,5 +1,6 @@
 .about-box {
     width: 40%;
+    min-width: 800px;
     height: 75%;
     border-radius: 25px;
     position: absolute;
@@ -41,7 +42,8 @@
 }
 
 .about-image {
-    height: 90%;
+    max-height: 90%;
+    max-width: 90%;
 }
 
 .about-image-light {
