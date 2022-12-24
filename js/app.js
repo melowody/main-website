@@ -71,6 +71,14 @@ toTheme = () => [
     {
         items: $("#theme-slider-container"),
         prefix: "theme-slider-container"
+    },
+    {
+        items: $(".left-button"),
+        prefix: "button"
+    },
+    {
+        items: $(".right-button"),
+        prefix: "button"
     }
 ];
 
