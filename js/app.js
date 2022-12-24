@@ -63,6 +63,14 @@ toTheme = () => [
     {
         items: $("#project-text"),
         prefix: "project-text"
+    },
+    {
+        items: $("#theme-svg-container"),
+        prefix: "theme-svg-container"
+    },
+    {
+        items: $("#theme-slider-container"),
+        prefix: "theme-slider-container"
     }
 ];
 
@@ -86,10 +94,20 @@ function disableDarkTheme() {
     setCookie("darkMode", 0);
 }
 
+function toggleDarkTheme() {
+    let cookie = getCookie("darkMode");
+    if (cookie == 1) {
+        disableDarkTheme();
+    } else {
+        enableDarkTheme();
+    }
+}
+
 $(document).ready(function() {
     let cookie = getCookie("darkMode");
     if (cookie == 1) {
         enableDarkTheme();
+        $("#theme-switch-checkbox").attr("checked", "checked");
     } else {
         disableDarkTheme();
     }
