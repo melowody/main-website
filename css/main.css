@@ -21,3 +21,11 @@
     padding: 0;
     margin: 0;
 }
+
+.title-text-light {
+    color: black;
+}
+
+.title-text-dark {
+    color: white;
+}

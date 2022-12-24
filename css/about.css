@@ -7,12 +7,19 @@
     top: 55%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    background-color: white;
-    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.05);
     overflow-x: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+.about-box-light {
+    background-color: white;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-box-dark {
+    background-color: #242424;
 }
 
 .about-box::-webkit-scrollbar {
@@ -35,6 +42,9 @@
 
 .about-image {
     height: 90%;
+}
+
+.about-image-light {
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -42,4 +52,8 @@
     width: 90%;
     font-family: Monolith;
     font-size: 16pt;
+}
+
+.about-text-dark {
+    color: white;
 }

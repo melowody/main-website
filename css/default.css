@@ -9,9 +9,16 @@
 }
 
 html, body {
-    background-color: white;
     margin: 0;
     padding: 0;
+}
+
+.html-light, .body-light {
+    background-color: white;
+}
+
+.html-dark, .body-dark {
+    background-color: #121212;
 }
 
 body {

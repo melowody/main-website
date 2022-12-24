@@ -7,8 +7,15 @@
     top: 55%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+}
+
+.project-box-light {
     background-color: white;
     box-shadow: 0 0px 30px rgba(0, 0, 0, 0.05);
+}
+
+.project-box-dark {
+    background-color: #242424;
 }
 
 #project-image-container {
@@ -18,6 +25,9 @@
     align-items: center;
     overflow: hidden;
     max-height: 50%;
+}
+
+.project-image-container-light {
     box-shadow: 0 0px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -29,6 +39,18 @@
 #project-text {
     margin: 30px;
     margin-top: 0px;
+}
+
+.project-text-dark {
+    color: white;
+}
+
+.project-text-dark a {
+    color: white;
+}
+
+.project-text-light a {
+    color: black;
 }
 
 #project-text h1 {
