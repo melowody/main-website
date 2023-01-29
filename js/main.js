@@ -20,7 +20,8 @@ have you had enough water to drink today?
 heisenbones.
 i will break into your house and beat decode on your pc.
 we should replace oxygen with swag.
-rate entity.`;
+rate entity.
+little head big earb. litte body big screm.`;
 
 function getRandomSubtitle() {
     var lines = text.split('\n');
