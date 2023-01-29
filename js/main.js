@@ -7,7 +7,6 @@ dragons are awesome.
 game to mean what?
 you know what would be really fucking funny?
 it's boshy time!
-you are fuck map.
 pastries my enemy call that an opp tart.
 TRANS RIGHTS!
 day 50 blend microplastics full time day job blending microplastics wife and kids blend business day in day out blending rich as fuck blending microplastics so much money 6:45am healthy start blending microplastics masses give good money for blending very satisfied.
@@ -21,7 +20,8 @@ heisenbones.
 i will break into your house and beat decode on your pc.
 we should replace oxygen with swag.
 rate entity.
-little head big earb. litte body big screm.`;
+little head big earb. litte body big screm.
+theres a trap door hidden in my cabinet. it leads to my secret stash of pistachios.`;
 
 function getRandomSubtitle() {
     var lines = text.split('\n');
