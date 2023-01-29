@@ -20,6 +20,7 @@ heisenbones.
 i will break into your house and beat decode on your pc.
 we should replace oxygen with swag.
 rate entity.
+little head big earb. litte body big screm.
 theres a trap door hidden in my cabinet. it leads to my secret stash of pistachios.`;
 
 function getRandomSubtitle() {
