@@ -20,6 +20,9 @@ function displaySongs() {
     $("#song-left iframe").attr('src', `//www.youtube.com/embed/${song1.url}`);
 
     song2 = data[Math.floor(Math.random()*data.length)];
+    while (song2.url == song1.url) {
+	song2 = data[Math.floor(Math.random()*data.length)];
+    }
     $("#song-right .title").html(song2.name);
     $("#song-right .subtitle").html(`by ${song2.composer} ${song2.arranger == null ? '' : `<br />arr. ${song2.arranger}`}`);
     $("#song-right iframe").attr('src', `//www.youtube.com/embed/${song2.url}`);
