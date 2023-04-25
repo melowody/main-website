@@ -2,26 +2,15 @@ var song1;
 var song2;
 var data;
 
-function saveJson() {
-    $.ajax
-        ({
-            type: "POST",
-            dataType: "json",
-            async: true,
-            url: "../php/writeJSON.php",
-            data: { data: JSON.stringify(data, null, 4) },
-            failure: function () {alert("Error!");}
-        });
-}
-
-function incrementTotalVotes(name) {
-    let songIndex = data.findIndex((obj => obj.name == name));
-    data[songIndex].totalVotes += 1;
-}
-
-function incrementVote(name) {
-    let songIndex = data.findIndex((obj => obj.name == name));
-    data[songIndex].votes += 1;
+function voteFor(f, a) {
+	$.ajax({
+		type: "POST",
+		dataType: "json",
+		async: true,
+		url: "../php/writeJSON.php",
+		data: {yes: f, no: a},
+		success: function () {console.log("Yahoo!");}
+	});
 }
 
 function displaySongs() {
@@ -50,21 +39,15 @@ $(document).ready(function() {
     loadData();
 
     $("#song-left").click(function(e) {
-        let name = $("#song-left .title").text();
+	let name = $("#song-left .title").text();
         let name2 = $("#song-right .title").text();
-        incrementVote(name);
-        incrementTotalVotes(name);
-        incrementTotalVotes(name2);
-        saveJson();
+        voteFor(name, name2);
         displaySongs();
     })
     $("#song-right").click(function(e) {
         let name = $("#song-left .title").text();
         let name2 = $("#song-right .title").text();
-        incrementVote(name2);
-        incrementTotalVotes(name2);
-        incrementTotalVotes(name);
-        saveJson();
+       	voteFor(name2, name);
         displaySongs();
     })
 });
