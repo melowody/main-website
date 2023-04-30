@@ -16,7 +16,7 @@ function voteFor(f, a) {
 function displaySongs() {
     song1 = data[Math.floor(Math.random()*data.length)];
     $("#song-left .title").html(song1.name);
-    $("#song-left .subtitle").html(`by ${song1.composer} ${song1.arranger == null ? '' : `<br />arr. ${song1.arranger}`}`);
+    $("#song-left .subtitle").html(`by ${song1.composer}${song1.arranger == null ? '' : `<br />arr. ${song1.arranger}`}${song1.hasOwnProperty('grade') ? `<br />Grade: ${song1.grade}` : ''}`);
     $("#song-left iframe").attr('src', `//www.youtube.com/embed/${song1.url}`);
 
     song2 = data[Math.floor(Math.random()*data.length)];
@@ -24,16 +24,14 @@ function displaySongs() {
 	song2 = data[Math.floor(Math.random()*data.length)];
     }
     $("#song-right .title").html(song2.name);
-    $("#song-right .subtitle").html(`by ${song2.composer} ${song2.arranger == null ? '' : `<br />arr. ${song2.arranger}`}`);
+    $("#song-right .subtitle").html(`by ${song2.composer} ${song2.arranger == null ? '' : `<br />arr. ${song2.arranger}`}${song2.hasOwnProperty('grade') ? `<br />Grade: ${song2.grade}` : ''}`);
     $("#song-right iframe").attr('src', `//www.youtube.com/embed/${song2.url}`);
 }
 
 function loadData() {
     $.getJSON("./js/songs.json", function(json) {
         data = json;
-        console.log(data);
     }).done(function () {
-        console.log("Balls");
         displaySongs();
     });
 }
