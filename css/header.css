@@ -69,3 +69,7 @@
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
 }
+
+.header-links-item-selected-dark {
+    text-decoration-color: white;
+}

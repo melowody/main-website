@@ -79,6 +79,14 @@ toTheme = () => [
     {
         items: $(".right-button"),
         prefix: "button"
+    },
+    {
+        items: $(".song-text"),
+        prefix: "song-text"
+    },
+    {
+        items: $(".header-links-item-selected"),
+        prefix: "header-links-item-selected"
     }
 ];
 
